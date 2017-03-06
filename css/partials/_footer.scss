@@ -1,0 +1,57 @@
+
+footer {
+	background: url(../images/footerbg.png);
+	background-size: cover;
+	width: 100%;
+}
+
+div.footer {
+	display: flex;
+	color: $brandQuaternary;
+	font-family: $fontBody;
+}
+
+@media (max-width: 850px) {
+	div.footer {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+div.footerSocial, div.footerMenu, div.footerHours {
+	display: flex;
+	flex-direction: column;
+	width: 33.33%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+@media (max-width: 850px) {
+	div.footerSocial, div.footerMenu, div.footerHours {
+		width: 100%;
+	}
+}
+
+div.footerMenu p {
+	margin: 0;
+}
+
+div.tweets span.link, div.footerMenu p, div.footerHours p.posts {
+	color: $brandPrimary;
+	cursor: pointer;
+} 
+
+div.footerIcons i {
+	font-size: 1.6em;
+	padding-right: 3%;
+	cursor: pointer;
+}
+
+div.footerMenu a, div.footerIcons a {
+	color: $brandQuaternary;
+	text-decoration: none;
+}
+
+div.footerIcons i:hover {
+	color: $brandPrimary;
+}
